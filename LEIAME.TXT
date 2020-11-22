@@ -1,0 +1,32 @@
+Desafio 01
+
+"Lembrando que a sequencia de Fibonacci é iniciada pela sequencia 1 e 1"
+Maybe not.
+Acho que não.
+
+"Pela convenção moderna a sequência inicial começa por F0 = 0. No livro Liber Abaci (veja Seção Origens) esta começava com F1 = 1, omitindo-se o zero inicial." - https://pt.wikipedia.org/wiki/Sequência_de_Fibonacci
+Anyway, in my code i considered that start with 1.
+De qualquer forma, no meu código eu considerei que inicia com 1, mas fica a resalva. 
+
+See at self python docs:
+Um pequeno exemplo na própria documentacao do python.
+>>> fib(500)
+0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
+https://docs.python.org/3/tutorial/modules.html
+
+Another examples and libs
+Outros exemplos e bibliotecas que usam 0 como F0.
+
+https://www.programiz.com/c-programming/examples/fibonacci-series
+https://www.javatpoint.com/fibonacci-series-in-c
+https://www.mathsisfun.com/numbers/fibonacci-sequence.html
+https://www.livescience.com/37470-fibonacci-sequence.html
+https://www.goldennumber.net/fibonacci-series/
+https://github.com/chaitanyav/fibonacci
+
+
+Desafio 02
+
+Considering that "A prime number (or a prime) is a natural number greater than 1 that is not a product of two smaller natural numbers." - https://en.wikipedia.org/wiki/Prime_number
+Para garantir que não haja desencontros, considero que o primeiro número primo seja 2.
+
