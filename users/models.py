@@ -12,3 +12,13 @@ class User(models.Model):
     verified_email = models.BooleanField(default=False)
     locale         = models.CharField(max_length=4)
     last_login     = models.DateTimeField(default=datetime.now)
+    # required to auth.login
+    REQUIRED_FIELDS = ['uid']
+    USERNAME_FIELD = 'email'
+
+    def __init__(self, *args, **kwargs):
+        # required to auth.login
+        self.is_anonymous = False
+        # required to auth.login
+        self.is_authenticated = True
+        super().__init__(*args, **kwargs)
