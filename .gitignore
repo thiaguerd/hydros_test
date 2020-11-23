@@ -1,0 +1,7 @@
+venv/
+db.sqlite3
+.idea/
+__pycache__/
+node_modules/
+hydros/static/webpack/main.*
+package-lock.json

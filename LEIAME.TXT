@@ -24,9 +24,13 @@ https://www.livescience.com/37470-fibonacci-sequence.html
 https://www.goldennumber.net/fibonacci-series/
 https://github.com/chaitanyav/fibonacci
 
-
 Desafio 02
 
 Considering that "A prime number (or a prime) is a natural number greater than 1 that is not a product of two smaller natural numbers." - https://en.wikipedia.org/wiki/Prime_number
 Para garantir que não haja desencontros, considero que o primeiro número primo seja 2.
 
+Desafio 03
+
+Por questões pessoas não completei o desafio 03, me deu tempo de implementar apenas o login pelo google.
+
+Dificuldade nenhuma em casa desafio.
