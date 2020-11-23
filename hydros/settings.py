@@ -118,3 +118,33 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
+SOCIAL_PROVIDERS = {
+    'google': {
+        'app':{
+            'client_id': os.environ['GOOGLE_CLIENT_ID'],
+            'client_secret': os.environ['GOOGLE_CLIENT_SECRET']
+        },
+        'auth_params': {
+            'grant_type': "authorization_code",
+            'client_id': os.environ['GOOGLE_CLIENT_ID'],
+            'client_secret': os.environ['GOOGLE_CLIENT_SECRET'],
+            'redirect_uri': os.environ['GOOGLE_REDIRECT_URI'],
+        },
+        'refresh': {
+            'grant_type': "refresh_token"
+        },
+        'url': {
+            'callback': os.environ['GOOGLE_REDIRECT_URI'],
+            'auth': 'https://oauth2.googleapis.com/token',
+            'refresh': 'https://www.googleapis.com/oauth2/v4/token',
+            'info': 'https://www.googleapis.com/oauth2/v1/userinfo',
+            'login': 'https://accounts.google.com/o/oauth2/auth'
+        },
+        'params_login': {
+            'client_id': os.environ['GOOGLE_CLIENT_ID'],
+            'response_type': 'code',
+            'scope': 'email profile openid',
+            'redirect_uri': 'http://localhost:8000/callback'
+        }
+    }
+}
