@@ -1,6 +1,12 @@
 version: '3'
 
 services:
+  db:
+    image: postgres
+    volumes:
+      - postgresql_data:/var/lib/postgresql/data
+    env_file:
+      - .env
   web:
     volumes:
       - .:/app
@@ -9,5 +15,9 @@ services:
       dockerfile: ./Dockerfile
     ports:
       - '8000:8000'
+    depends_on:
+      - db
     env_file:
       - .env
+volumes:
+  postgresql_data:
