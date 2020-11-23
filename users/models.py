@@ -2,7 +2,7 @@ from django.db import models
 from datetime import datetime
 
 class User(models.Model):
-    uid            = models.CharField(max_length=20)
+    uid            = models.CharField(max_length=30)
     email          = models.CharField(max_length=20, unique=True)
     name           = models.CharField(max_length=100)
     given_name     = models.CharField(max_length=100)
