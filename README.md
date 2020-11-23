@@ -28,3 +28,16 @@ Anyway, in my code i considered that start with 1.
 
 Considering that **"A prime number (or a prime) is a natural number greater than 1 that is not a product of two smaller natural numbers."** - [wiki](https://en.wikipedia.org/wiki/Prime_number)
 
+# Desafio 03
+
+Build image
+
+	$ docker-compose build
+
+Setup project
+
+	$ docker-compose run web bash setup
+
+Start 
+
+	$ docker-compose up
